@@ -42,24 +42,24 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column
+      body: Row
       (children: [
-        Expanded(child: 
+        SizedBox(child: 
         Container(
-          color: Colors.red,
+          color: Color.fromARGB(255, 0, 102, 255),
         ),
         ),
-        Expanded(
+        SizedBox(
           child: Container(
-          color: Colors.white,
-          width: 200,
-          height: 200,
-          child: Image.asset('assets/images/libano.png'),
+           height: 200,
+           width: 200,
+          color: Color.fromARGB(255, 233, 210, 0),
+          child: Image.asset('assets/images/tridente.jpg'),
         ),
         ),
-          Expanded(child: 
+          SizedBox(child: 
         Container(
-          color: Colors.red,
+          color: Color.fromARGB(255, 0, 102, 255),
         ),
         ),
       ],

@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,8 +29,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  get child => null;
-
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -44,26 +40,20 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Column
       (children: [
+        SizedBox(
+        ),
         Expanded(child: 
         Container(
-          color: Colors.red,
+          color: Color.fromARGB(255, 0, 102, 255)
         ),
         ),
-        Expanded(
-          child: Container(
-          color: Colors.white,
-          width: 200,
-          height: 200,
-          child: Image.asset('assets/images/libano.png'),
-        ),
-        ),
-          Expanded(child: 
+        
+        Expanded(child: 
         Container(
-          color: Colors.red,
+          color: Color.fromARGB(255, 233, 210, 0)
         ),
         ),
-      ],
-    ),
+      ],)
     );
   }
 }
